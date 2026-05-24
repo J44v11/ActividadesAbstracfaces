@@ -60,6 +60,16 @@ public class CocheCombustion extends Vehiculo {
         }
     }
 
+    // Este metodo lo cree para que se mostrara en la informacion del coche si el motor esta encendido o no, ya que el atributo es booleano 
+    // y se lea mejor y mas claro todo.
+    public String motorEncendido() {
+        if (motorCombustionEncendido == true) {
+            return "Si, el motor esta encendido";
+        } else {
+            return "No, el motor esta apagado";
+        }
+    }
+
     public void mostrarCocheCombustion() {
         System.out.println("--- Informacion del Coche ---");
         System.out.println("Color: " + color);
@@ -67,7 +77,7 @@ public class CocheCombustion extends Vehiculo {
         System.out.println("Numero de ruedas: " + numeroRuedas);
         System.out.println("Modelo: " + modelo);
         System.out.println("Matricula: " + matricula);
-        System.out.println("Motor encendido: " + getMotorCombustionEncendido());
+        System.out.println("Motor encendido: " + motorEncendido());
         System.out.println("Litros de combustible: " + getLitrosCombustible());
         System.out.println();
     }
