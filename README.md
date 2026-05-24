@@ -1,6 +1,19 @@
 # ActividadesAbstracfaces
 
+![Java](https://img.shields.io/badge/Java-11%2B-blue) ![GitHub Repo](https://img.shields.io/badge/Repo-J44v11%2FActividadesAbstracfaces-green)
+
 Proyecto U5 T3 — Interfaces y clases abstractas.
+
+## Tabla de contenidos
+
+- [Descripción](#descripción)
+- [Estructura](#estructura)
+- [Requisitos](#requisitos)
+- [Extensiones recomendadas (VS Code)](#extensiones-recomendadas-vs-code)
+- [Clonar el proyecto](#clonar-el-proyecto)
+- [Ejecutar la aplicación](#ejecutar-la-aplicación)
+
+***
 
 ## Descripción
 
@@ -13,6 +26,7 @@ El punto de entrada de las prácticas es la clase `App` en [src/App.java](src/Ap
 
 ## Estructura
 
+```text
 ActividadesAbstracfaces/
 ├─ src/
 │  ├─ App.java
@@ -27,6 +41,7 @@ ActividadesAbstracfaces/
 │           └─ Rectangulo.java
 ├─ bin/   (salida de compilación)
 └─ README.md
+```
 
 ## Requisitos
 
