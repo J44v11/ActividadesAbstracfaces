@@ -56,4 +56,10 @@ public abstract class Vehiculo {
         this.matricula = matricula;
     }
 
+    public abstract void arrancar();
+
+    public abstract void pararMotor();
+
+    public abstract void mover();
+
 }
