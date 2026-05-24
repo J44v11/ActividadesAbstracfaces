@@ -46,4 +46,18 @@ public class CocheCombustion extends Vehiculo {
         System.out.println("El motor se ha parado.");
     }
 
+    @Override
+    public void mover() {
+        if (motorCombustionEncendido == false) {
+            System.out.println("El coche no se puede mover porque el motor no esta arrancado.");
+            pararMotor();
+        } else if (litrosCombustible > 0) {
+            litrosCombustible--;
+            System.out.println("El coche se ha movido. Se ha consumido 1 litro de combustible.");
+        } else {
+            System.out.println("El coche no se puede mover porque no tiene combustible.");
+            pararMotor();
+        }
+    }
+
 }
