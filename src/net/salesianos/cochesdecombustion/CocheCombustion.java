@@ -40,4 +40,10 @@ public class CocheCombustion extends Vehiculo {
         }
     }
 
+    @Override
+    public void pararMotor() {
+        motorCombustionEncendido = false;
+        System.out.println("El motor se ha parado.");
+    }
+
 }
