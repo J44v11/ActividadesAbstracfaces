@@ -12,4 +12,20 @@ public class CocheCombustion extends Vehiculo {
         this.litrosCombustible = litrosCombustible;
     }
 
+    public boolean getMotorCombustionEncendido() {
+        return motorCombustionEncendido;
+    }
+
+    public void setMotorCombustionEncendido(boolean motorCombustionEncendido) {
+        this.motorCombustionEncendido = motorCombustionEncendido;
+    }
+
+    public int getLitrosCombustible() {
+        return litrosCombustible;
+    }
+
+    public void setLitrosCombustible(int litrosCombustible) {
+        this.litrosCombustible = litrosCombustible;
+    }
+
 }
