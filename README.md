@@ -1,18 +1,74 @@
-## Getting Started
+# ActividadesAbstracfaces
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Proyecto U5 T3 — Interfaces y clases abstractas.
 
-## Folder Structure
+## Descripción
 
-The workspace contains two folders by default, where:
+Colección de ejercicios didácticos organizados en dos paquetes dentro de `src/net/salesianos`:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+- `cochesdecombustion`: clases relacionadas con vehículos de combustión (`CocheCombustion`, `Vehiculo`).
+- `figurasgeometricas`: cálculos y figuras geométricas (`Circulo`, `Rectangulo`, `CalculoGeometrico`).
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+El punto de entrada de las prácticas es la clase `App` en [src/App.java](src/App.java).
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Estructura
 
-## Dependency Management
+ActividadesAbstracfaces/
+├─ src/
+│  ├─ App.java
+│  └─ net/
+│     └─ salesianos/
+│        ├─ cochesdecombustion/
+│        │  ├─ CocheCombustion.java
+│        │  └─ Vehiculo.java
+│        └─ figurasgeometricas/
+│           ├─ CalculoGeometrico.java
+│           ├─ Circulo.java
+│           └─ Rectangulo.java
+├─ bin/   (salida de compilación)
+└─ README.md
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Requisitos
+
+- Java JDK 11 o superior.
+- Git (para clonar el repositorio).
+
+## Extensiones recomendadas (VS Code)
+
+Instala estas extensiones para una mejor experiencia al editar, compilar y depurar Java en VS Code:
+
+- `Extension Pack for Java` (Microsoft) — incluye soporte y herramientas esenciales.
+- `Language Support for Java(TM) by Red Hat` — resaltado y asistencia de código.
+- `Debugger for Java` (Microsoft) — depuración integrada.
+- `Java Test Runner` (Microsoft) — ejecutar tests con JUnit.
+- `Maven for Java` (Microsoft) — si quieres gestionar dependencias y proyectos Maven.
+
+## Clonar el proyecto
+
+En una terminal en VS Code, muevete hacia la carpeta donde quieras guardar tu proyecto.
+
+Luego en la misma terminal ejecuta:
+
+```bash
+git clone https://github.com/J44v11/ActividadesAbstracfaces.git
+cd ActividadesAbstracfaces
+```
+
+Si vas a trabajar desde la línea de comandos, cambia al subdirectorio `src`:
+
+```bash
+cd src
+```
+
+## Ejecutar la aplicación
+
+Opciones según tu entorno Java:
+
+1) Ejecutar directamente el fichero fuente (Java 11+ — lanzamiento de archivo único)
+
+```bash
+cd src
+java App.java
+```
+
+Esto compila y ejecuta `App.java` en un solo paso si la clase `App` está en el paquete por defecto.
