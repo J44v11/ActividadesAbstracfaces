@@ -60,4 +60,16 @@ public class CocheCombustion extends Vehiculo {
         }
     }
 
+    public void mostrarCocheCombustion() {
+        System.out.println("--- Informacion del Coche ---");
+        System.out.println("Color: " + color);
+        System.out.println("Numero de puertas: " + numeroPuertas);
+        System.out.println("Numero de ruedas: " + numeroRuedas);
+        System.out.println("Modelo: " + modelo);
+        System.out.println("Matricula: " + matricula);
+        System.out.println("Motor encendido: " + getMotorCombustionEncendido());
+        System.out.println("Litros de combustible: " + getLitrosCombustible());
+        System.out.println();
+    }
+
 }
